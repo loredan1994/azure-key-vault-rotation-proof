@@ -1,0 +1,27 @@
+# Live evidence contains tenant/subscription identifiers and vault-specific URIs.
+kv-*-evidence-*.md
+kv-*-evidence-*.md.sha256
+evidence/
+
+# Private keys, certificates, BYOK packages, and Key Vault backup blobs.
+*.pem
+*.key
+*.pfx
+*.p12
+*.byok
+*.backup
+*.blob
+
+# Credentials, local configuration, and state.
+.env
+.env.*
+*.token
+credentials*
+secrets/
+.azure/
+*.tfstate
+*.tfstate.*
+
+# Local noise.
+*.log
+.DS_Store
